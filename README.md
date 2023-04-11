@@ -1,4 +1,4 @@
-![logo] ""
+![logo](https://github.com/Karthikoffl/travel_advisor_app/blob/master/screenshots/Travel%20Advisor%20App%20-%20Banner.jpg)
 # Travel Advisor App - React Native
 Duration : 5hrs
 References Used In the Project
