@@ -39,7 +39,7 @@ const ItemScreen = ({route}) => {
                   </TouchableOpacity>
 
                   <TouchableOpacity className="w-10 h-10 rounded-md items-center justify-center bg-[#06B2BE]">
-                  <FontAwesome5 name="heartbeat" size={24} color="white" />
+                  <FontAwesome5 name="heart" size={24} color="white" />
                   </TouchableOpacity>
                 </View>
 
@@ -126,24 +126,24 @@ const ItemScreen = ({route}) => {
             <View className="space-y-2 bg-gray-100 rounded-2xl px-4 py-4 mt-2">
                 {data?.phone && (
                     <View className="items-center flex-row space-x-6">
-                        <FontAwesome name="phone" size={22} color="#428288" />
+                        <FontAwesome name="phone" size={20} color="#428288" />
                         <Text className="text-md">{data?.phone}</Text>
                     </View>
                 )}
                 {data?.email && (
                     <View className="items-center flex-row space-x-6">
-                        <FontAwesome name="envelope" size={22} color="#428288" />
+                        <FontAwesome name="envelope" size={20} color="#428288" />
                         <Text className="text-md">{data?.email}</Text>
                     </View>
                 )}
                 {data?.address && (
                     <View className="items-center flex-row space-x-6">
-                        <FontAwesome name="map-pin" size={22} color="#428288" />
+                        <FontAwesome name="map-pin" size={20} color="#428288" />
                         <Text className="text-md">{data?.address}</Text>
                     </View>
                 )}
 
-                <View className="mt-12 px-4 py-4 rounded-lg bg-[#06B2BE] items-center justify-center mb-8">
+                <View className="mt-12 px-4 py-4 rounded-lg bg-[#06B2BE] items-center justify-center mb-4">
                     <Text className="text-3xl font-semibold uppercase tracking-wider text-gray-100">
                         Book Now
                     </Text>
