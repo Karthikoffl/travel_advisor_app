@@ -78,6 +78,7 @@ const Discover = () => {
         <ActivityIndicator size="large" color="#0B646B" />
       </View> :  <ScrollView>
         <View className="flex-row items-center justify-between px-6 mt-8">
+            {/* key needs to be same as per the api reference */}
             <MenuContainer
                 key={"hotel"}
                 title={"Hotels"}
