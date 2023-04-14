@@ -4,6 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
+import { AntDesign } from '@expo/vector-icons';
 
 const ItemScreen = ({route}) => {
     const navigation = useNavigation();
@@ -64,8 +65,8 @@ const ItemScreen = ({route}) => {
                     {data?.name}
                   </Text>
                   <View className="flex-row items-center space-x-2 mt-2">
-                  <FontAwesome name="map-marker" size={25} color="#BC9EA6" />
-                  <Text className="text-[#8C9EA6] text-[14px] font-bold">
+                  <FontAwesome name="map-marker" size={16} color="#BC9EA6" />
+                  <Text className="text-[#8C9EA6] text-[14px] font-semibold">
                     {data?.location_string}
                   </Text>
                   </View>
@@ -107,7 +108,7 @@ const ItemScreen = ({route}) => {
                 )}
             </View>
              {data?.description && (
-                <Text className="mt-4 tracking-wide text-[13px] font-semibold text-[#97A6AF]">
+                <Text className="mt-4 tracking-wide text-[13px] font-regular text-[#000]">
                     {data?.description}
                 </Text>
              )}
@@ -117,7 +118,7 @@ const ItemScreen = ({route}) => {
                     {data?.cuisine.map((n) => (
                         <TouchableOpacity
                             key={n.key}
-                            className="px-2 py-1 rounded-md bg-emerald-100">
+                            className="px-2 py-1 rounded-md bg-emerald-100 text-black text-semibold">
                                 <Text>{n.name}</Text>
                         </TouchableOpacity>
                     ))}
@@ -143,10 +144,13 @@ const ItemScreen = ({route}) => {
                     </View>
                 )}
 
-                <View className="mt-12 px-4 py-4 rounded-lg bg-[#06B2BE] items-center justify-center mb-4">
-                    <Text className="text-3xl font-semibold uppercase tracking-wider text-gray-100">
+                <View className="flex-row mt-12 px-4 py-4 rounded-lg bg-[#06B2BE] items-center justify-center mb-4">
+                    <Text className="text-xl font-regular uppercase tracking-wider text-gray-100">
                         Book Now
                     </Text>
+                    <View className="items-center justify-center px-2 flex-row">
+                        <AntDesign name="arrowright" size={24} color="#fff" />
+                    </View>
                 </View>
             </View>
         </ScrollView>

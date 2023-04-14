@@ -40,8 +40,8 @@ const Discover = () => {
     <SafeAreaView className="flex-1 bg-white relative">
       <View className="flex-row items-center justify-between px-8">
         <View>
-            <Text className="text-[40px] text-[#03646B] font-bold">Discover</Text>
-            <Text className="text-[#527283] text-[32px]">the beauty today</Text>
+            <Text className="text-[40px] text-[#135157] font-bold">Discover</Text>
+            <Text className="text-[#000] text-[32px]">the beauty today</Text>
         </View>
 
         <View className="w-12 h-12 bg-gray-400 rounded-md items-center justify-center shadow-lg">
@@ -106,7 +106,7 @@ const Discover = () => {
 
         <View>
             <View className="flex-row items-center justify-between px-4 mt-8">
-                <Text className="text-[#2C7379] text-[28px] font-bold">Top Picks</Text>
+                <Text className="text-[#174D52] text-[28px] font-bold">Top Picks</Text>
                 <TouchableOpacity className="flex-row items-center justify-center space-x-2">
                     <Text className="text-[#A0C4C7] text-[18px] font-bold">Explore</Text>
                     <FontAwesome name="long-arrow-right" size={20} color="#A0C4C7" />
